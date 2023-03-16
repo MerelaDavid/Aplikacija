@@ -38,6 +38,7 @@ public class PregledZdravnika implements IAkcija {
                 }
             }
             req.setAttribute("pacienti",zdravnikoviPacienti);
+            req.setAttribute("prostaMesta",zdravnik.getKvotaPacientov()-zdravnik.getStPacientov());
             req.setAttribute("oseba",zdravnik);
             req.setAttribute("sporocilo","");
         } catch (Exception e) {

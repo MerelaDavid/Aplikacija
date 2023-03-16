@@ -147,7 +147,4 @@ public class ZdravnikDaoH2 extends ZdravnikDao {
         }
         return ret;
     }
-    public void izbrisiPacienta(){
-
-    }
 }

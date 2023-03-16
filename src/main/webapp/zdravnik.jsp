@@ -11,14 +11,15 @@ Kvota Pacientov: <strong>${oseba.kvotaPacientov}</strong><br/>
 
 
 <h4>ZDRAVNIKOVI PACIENTI</h4>
+<h4>Prosta mesta:  <strong>${prostaMesta}</strong></h4>
 
 
-<ul>
+<ol>
     <c:forEach var="pac" items="${pacienti}">
-        <li><c:out value="${pac.priimek}" /> <c:out value="${pac.ime}" /> <c:out value="${oseba.stPacientov}" /> <c:out value="${oseba.kvotaPacientov}" />
+        <li><c:out value="${pac.priimek}" /> <c:out value="${pac.ime}" />
         </li>
     </c:forEach>
-</ul>
+</ol>
 
 <a href="Krmilnik?akcija=PregledVsehZdravnikov">Nazaj</a>
 
